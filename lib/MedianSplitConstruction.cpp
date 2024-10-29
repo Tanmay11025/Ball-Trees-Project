@@ -4,7 +4,7 @@
 using namespace std;
 
 // creates a ball tree from a root containing all points
-void constructBallTree(BallTreeNode* root, vector<Point*> univSet) {
+void medianSplitAlgorithm(BallTreeNode* &root, const vector<Point*> &univSet) {
 
     // return if set size falls below threshold
     if(univSet.size() <= LEAF_POINT_COUNT_THRESHOLD) {
@@ -50,17 +50,16 @@ void constructBallTree(BallTreeNode* root, vector<Point*> univSet) {
     rightChild->ball->radius = findFarthestPoint(rightChild->ball->containedPoints, rightChildBallMedian).second;
 
     // recursively continue the process until threshold is met
-    constructBallTree(leftChild, leftChild->ball->containedPoints);
-    constructBallTree(rightChild, rightChild->ball->containedPoints);
+    medianSplitAlgorithm(leftChild, leftChild->ball->containedPoints);
+    medianSplitAlgorithm(rightChild, rightChild->ball->containedPoints);
 }
 
+BallTree* constructBallTreeUsingMedianSplit(BallTree* ballTree, vector<Point*> completePointSet) {
+    ballTree = new BallTree();
+    ballTree->root = new BallTreeNode(completePointSet);
 
-BallTreeNode* initialiseRootNode(BallTreeNode* root, vector<Point*> completePointSet) {
-    root = new BallTreeNode(completePointSet);
-    return root;
+    medianSplitAlgorithm(ballTree->root, completePointSet);
+
+    return ballTree;
 }
-
-
-
-
 
