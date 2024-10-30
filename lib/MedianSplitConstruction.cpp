@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include "classes/BallTree.cpp"
-#include "util/mathematicalFunctions.cpp"
+// #include "util/mathematicalFunctions.cpp"
+#include "/home/aryan-bodhe/Desktop/VSCode/Projects/BallTrees/util/mathematicalFunctions.cpp"
 using namespace std;
 
 // creates a ball tree from a root containing all points
@@ -54,6 +55,7 @@ void medianSplitAlgorithm(BallTreeNode* &root, const vector<Point*> &univSet) {
     medianSplitAlgorithm(rightChild, rightChild->ball->containedPoints);
 }
 
+/* Construct a Ball Tree from a NULL root using the given dataset. */
 BallTree* constructBallTreeUsingMedianSplit(BallTree* ballTree, vector<Point*> completePointSet) {
     ballTree = new BallTree();
     ballTree->root = new BallTreeNode(completePointSet);

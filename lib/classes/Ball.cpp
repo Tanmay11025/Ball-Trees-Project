@@ -1,3 +1,6 @@
+#ifndef BL
+#define BL
+
 #include <bits/stdc++.h>
 #include "Point.cpp"
 using namespace std;
@@ -21,3 +24,5 @@ public:
         this->radius = radius;
     }
 };
+
+#endif

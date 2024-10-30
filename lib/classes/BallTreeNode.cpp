@@ -1,3 +1,5 @@
+#ifndef BLTN
+#define BLTN
 #include <bits/stdc++.h>
 #include "Ball.cpp"
 using namespace std;
@@ -24,3 +26,5 @@ public:
         left = right = parent = NULL;
     }
 };
+
+#endif

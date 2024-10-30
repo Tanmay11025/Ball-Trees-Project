@@ -1,3 +1,6 @@
+#ifndef BLT
+#define BLT
+
 #include <bits/stdc++.h>
 #include "BallTreeNode.cpp"
 using namespace std;
@@ -29,3 +32,5 @@ public:
         return depth;
     }
 };
+
+#endif

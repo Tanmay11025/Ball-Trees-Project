@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "lib/classes/Point.cpp"
+#include "/home/aryan-bodhe/Desktop/VSCode/Projects/BallTrees/lib/classes/Point.cpp"
 using namespace std;
 
 /* Returns the Euclidean distance between two points. */
@@ -179,12 +179,12 @@ vector<vector<float>> computeCovarianceMatrixOfNFeatures(vector<Point*> coordina
 }
 
 
-vector<vector<float>> computeCovarianceMatrix(vector<Point*> coordinateSet, const Point* mean) {
+// vector<vector<float>> computeCovarianceMatrix(vector<Point*> coordinateSet, const Point* mean) {
 
-}
+// }
 
-/* Returns the standard deviation of the given set of points. */
-float computeStandardDeviation(vector<Point*> coordinateSet, const Point* mean) {
+// /* Returns the standard deviation of the given set of points. */
+// float computeStandardDeviation(vector<Point*> coordinateSet, const Point* mean) {
 
 
-}
+// }

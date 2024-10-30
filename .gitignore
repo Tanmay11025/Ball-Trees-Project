@@ -1,3 +1,5 @@
 .vscode/
 Trash/
 Resources/
+lib/PrincipalComponentAnalysis.cpp
+testbench.cpp
