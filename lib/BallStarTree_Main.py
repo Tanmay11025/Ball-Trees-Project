@@ -2,7 +2,7 @@ import pandas as pd
 from BallStarTree import BallStarTree
 
 # Loading data
-df = pd.read_csv('../Datasets/csv/2D_Blobs.csv')
+df = pd.read_csv('../Datasets/csv/2D_Moons.csv')
 data = df[['Feature1', 'Feature2']].to_numpy()
 
 # Initialize and fit the Ball* Tree
