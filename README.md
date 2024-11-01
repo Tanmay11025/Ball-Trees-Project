@@ -1,6 +1,6 @@
-# Ball* Tree Project
+# Ball Tree Project
 ## Project Aim
-The goal of this project is to build and analyze a Ball* Tree, an efficient data structure used for organizing points in high-dimensional spaces, with applications in nearest neighbor searches and clustering.
+The goal of this project is to build and analyze a Ball Tree, an efficient data structure used for organizing points in high-dimensional spaces, with applications in nearest neighbor searches and clustering.
 
 ## Completed Tasks
 1. Dataset Creation and Plotting:
